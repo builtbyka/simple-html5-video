@@ -69,17 +69,17 @@ VM.video = (function(){
 
 		function bigger()
 		{ 
-			myVid.width=560; 
+			myVid.width=680; 
 		} 
 
 		function smaller()
 		{ 
-			myVid.width=320; 
+			myVid.width=420; 
 		} 
 
 		function normal()
 		{ 
-			myVid.width=420; 
+			myVid.width=560; 
 		} 
 	}
 
