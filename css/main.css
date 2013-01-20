@@ -123,13 +123,10 @@ video{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    width: 100%;
-}
-
-source{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
+
 
 nav{
     width: 612px;
