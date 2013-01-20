@@ -131,6 +131,13 @@ nav{
     margin: 20px auto 0 auto;
 }
 
+nav p{
+    float: right;
+    font-weight: bold;
+    padding: 8px 0;
+    margin: 0;
+}
+
 .pause, .unmute{
     display: none;
 }
@@ -148,7 +155,7 @@ button{
     -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
     box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
     color: #fff;
-    font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+    font: bold 1.1em "helvetica neue", helvetica, arial, sans-serif;
     padding: 6px 0 8px 0;
     text-align: center;
     text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);

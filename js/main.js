@@ -8,6 +8,7 @@ VM.core = (function() {
 		$("html").removeClass("no-js");
 
 		if($('video').length){
+			VM.video.init();
 			VM.video.bind();		
 		}
 
@@ -20,6 +21,16 @@ VM.core = (function() {
 })();
 
 VM.video = (function(){
+
+	function init(){
+
+		var myVid = document.getElementById("video-player");
+
+		setInterval(function(){
+			var currentTime = Math.round(myVid.currentTime);
+			$('.current-time').find('span').text(currentTime + ' Secs');
+		}, 1000);
+	}
 	
 	function bind(){
 
@@ -43,12 +54,6 @@ VM.video = (function(){
 			  	break;
 			  case "muted":
 				muted();
-				break;
-			case "bigger":
-				bigger()
-			 	break;
-			case "normal":
-				normal();
 				break;
 			}
 		});
@@ -79,20 +84,10 @@ VM.video = (function(){
 				$('.unmute').show();
 			}
 		}  
-
-
-		function bigger()
-		{ 
-			myVid.width=680; 
-		} 
-
-		function normal()
-		{ 
-			myVid.width=560; 
-		} 
 	}
 
 	return {
+		init: init,
 		bind : bind
 	};
 
