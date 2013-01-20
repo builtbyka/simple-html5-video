@@ -121,6 +121,11 @@ video{
     border-radius: 20px;
 }
 
+source{
+    width: 100%;
+    height: auto;
+}
+
 nav{
     width: 612px;
     display: block;
