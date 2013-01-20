@@ -111,6 +111,10 @@ body{
     font-style: italic;
 }
 
+#video-container{
+    width: 560px;
+}
+
 video{
     margin: 0 auto;
     text-align: center;
