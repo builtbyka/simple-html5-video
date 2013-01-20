@@ -102,6 +102,15 @@ body{
     margin: 20px auto 0 auto;
 }
 
+.ready{
+    height: 35px;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+    font-family: Century Gothic, sans-serif;
+    font-style: italic;
+}
+
 video{
     margin: 0 auto;
     text-align: center;
@@ -113,12 +122,12 @@ video{
 }
 
 nav{
-    width: 422px;
+    width: 612px;
     display: block;
     margin: 20px auto 0 auto;
 }
 
-.pause{
+.pause, .unmute{
     display: none;
 }
 

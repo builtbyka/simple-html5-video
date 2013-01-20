@@ -26,7 +26,7 @@ VM.video = (function(){
 		var myVid = document.getElementById("video-player");
 
 		myVid.addEventListener("canplay", function() {
-		    alert("We're ready!");
+		    $('.ready').prepend('<p>The Video is ready to play</p>');
 		});
 
 		myVid.addEventListener("ended", function() {
@@ -41,12 +41,12 @@ VM.video = (function(){
 			case "playpause":
 			  	playPause();
 			  	break;
+			  case "muted":
+				muted();
+				break;
 			case "bigger":
 				bigger()
 			 	break;
-			case "smaller":
-				smaller();
-				break;
 			case "normal":
 				normal();
 				break;
@@ -67,14 +67,23 @@ VM.video = (function(){
 			} 
 		} 
 
+		function muted()
+		{ 
+			if(myVid.muted){
+				myVid.muted = false;
+				$('.unmute').hide();
+				$('.mute').show();
+			}else{
+				myVid.muted = true;
+				$('.mute').hide();
+				$('.unmute').show();
+			}
+		}  
+
+
 		function bigger()
 		{ 
 			myVid.width=680; 
-		} 
-
-		function smaller()
-		{ 
-			myVid.width=420; 
 		} 
 
 		function normal()
